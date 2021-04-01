@@ -1,0 +1,17 @@
+#footer {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(to top right, #000000, #232526);
+  color: #ffffff;
+  padding: 15px 0;
+}
+
+.link-footer{
+    color: #ffffff;
+}
+
+.link-footer:hover{
+    color: #0093FF;
+    text-decoration: none;
+}

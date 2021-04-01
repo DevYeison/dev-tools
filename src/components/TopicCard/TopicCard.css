@@ -1,0 +1,12 @@
+#cardTitle{
+    text-align: center;
+    font-size: 2rem;
+}
+
+#cardText{
+    font-size: 1rem;
+}
+
+#cardImg{
+    width: 85%;
+}
