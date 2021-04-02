@@ -1,0 +1,13 @@
+
+html{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    scrollbar-width: thin;
+}
+::-webkit-scrollbar {
+    width: 0.5em;
+}
+::-webkit-scrollbar-thumb {
+    background: #A1A1A1
+}
