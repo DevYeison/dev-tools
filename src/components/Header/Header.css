@@ -7,6 +7,16 @@ header {
 .heading {
   font-size: 1.8rem;
   margin-left: 5px;
+  text-decoration: none;
+}
+
+#home-link{
+  text-decoration: none;
+  color: #ff0054;
+}
+
+#home-link:hover{
+  transform: translateY(-1px);
 }
 
 .link-element {
