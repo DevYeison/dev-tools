@@ -5,7 +5,13 @@ import { Link } from "react-router-dom";
 const Header = ({ brandName, topicList }) => {
   return (
     <header className="d-flex bd-highlight">
-      <span className="p-2 flex-grow-1 bd-highlight heading">{brandName}</span>
+      <Link
+        id="home-link"
+        to="/home"
+        className="p-2 flex-grow-1 bd-highlight heading"
+      >
+        <span>{brandName}</span>
+      </Link>
       <>
         {topicList.map((button) => (
           <Link
