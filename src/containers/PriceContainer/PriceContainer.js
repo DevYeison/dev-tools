@@ -1,5 +1,5 @@
-import React from "react";
-import PricePage from '../../pages/PricePage/PricePage';
+import React, { useEffect, useState } from "react";
+import PricePage from "../../pages/PricePage/PricePage";
 
 const PriceContainer = () => {
   const brandName = "Dev | Tools";
@@ -13,13 +13,25 @@ const PriceContainer = () => {
       id: 3,
       title: "Contacto",
       route: "contact",
-      },
+    },
   ];
-  return <PricePage brandName={brandName} navList={navList} />;
-};
-    
-    
-    
+  const reactDocsUrl = "https://es.reactjs.org/";
+  const githubProfileUrl = "https://github.com/devyeison";
+  const [currentYear, setYear] = useState("2021");
 
+  useEffect(() => {
+    setYear(new Date().getFullYear());
+  }, [currentYear]);
+  
+  return (
+    <PricePage
+      brandName={brandName}
+      navList={navList}
+      currentYear={currentYear}
+      reactDocsUrl={reactDocsUrl}
+      githubProfileUrl={githubProfileUrl}
+    />
+  );
+};
 
 export default PriceContainer;
