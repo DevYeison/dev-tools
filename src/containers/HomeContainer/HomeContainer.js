@@ -13,11 +13,11 @@ const Home = () => {
   const philosophy =
     "El propósito de este sitio es compartir información adquirida como desarrollador para futuros visitantes interesados en aumentar sus habilidades como programadores y aportar algunas herramientas para gestionar mejor sus proyectos.";
   const quoteHeader = "Motivación";
-    const quoteText =
+  const quoteText =
     "El conocimiento es el arma más poderosa para cambiar el mundo y así como increíbles personas me ayudaron a mejorar, considero que puedo aportar un granito de arena al desarrollo de Software.";
   const author = "Yeison Garzón Toro.";
   const profession = "Javascript Developer";
-    const reactDocsUrl = "https://es.reactjs.org/";
+  const reactDocsUrl = "https://es.reactjs.org/";
   const githubProfileUrl = "https://github.com/devyeison";
 
   const [currentYear, setYear] = useState("2021");
