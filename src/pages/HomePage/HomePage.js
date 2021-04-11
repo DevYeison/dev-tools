@@ -1,15 +1,13 @@
 import React from "react";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-import BackgroundImage from "../../components/BackgroundImage/BackgroundImage";
-import TopicCard from "../../components/TopicCard/TopicCard";
+
+import GradientBackground from "../../components/GradientBackground/GradientBackground";
+import CardWithImage from "../../components/CardWithImage/CardWithImage";
 import ContentHeader from "../../components/ContentHeader/ContentHeader";
 import Quote from "../../components/Quote/Quote";
 import ContentInfo from "../../components/ContentInfo/ContentInfo";
 import CardGroup from "react-bootstrap/CardGroup";
 
 const HomePage = ({
-  brandName,
   topicList,
   backgroundImageText,
   contentHeaderPhilosophy,
@@ -18,15 +16,11 @@ const HomePage = ({
   quoteHeader,
   quoteText,
   author,
-  profession,
-  currentYear,
-  reactDocsUrl,
-  githubProfileUrl,
+  profession
 }) => {
   return (
     <>
-      <Header brandName={brandName} topicList={topicList} />
-      <BackgroundImage heading={backgroundImageText} />
+      <GradientBackground headingText={backgroundImageText}/>
       <ContentHeader contentHeaderText={contentHeaderPhilosophy} />
       <ContentInfo contetText={philosophy} />
       <Quote
@@ -39,7 +33,7 @@ const HomePage = ({
       <CardGroup className="px-3 pb-5">
         <>
           {topicList.map((cardInfo) => (
-            <TopicCard
+            <CardWithImage
               key={cardInfo.id}
               img={cardInfo.img}
               title={cardInfo.title}
@@ -48,11 +42,6 @@ const HomePage = ({
           ))}
         </>
       </CardGroup>
-      <Footer
-        year={currentYear}
-        ReactUrl={reactDocsUrl}
-        GithubUrl={githubProfileUrl}
-      />
     </>
   );
 };
