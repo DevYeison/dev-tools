@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# Dev | Tools
+## Front-end Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+_Cliente web creado en React_
 
-## Available Scripts
+## Comenzando 🚀
 
-In the project directory, you can run:
+_El principal objetivo de este proyecto es aportar herramientas totalmente gratuitas a cualquier desarrollador._
 
-### `npm start`
+Mira **Deployment** para conocer como desplegar el proyecto.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Pre-requisitos 📋
 
-### `npm test`
+_Que cosas necesitas para instalar el software_
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+Lo primero que tienes que tener en cuenta es tener instalado Nodejs (entorno de ejecución) en este caso usamos la versión (v14.15.3)
+```
 
-### `npm run build`
+### Instalación 🔧
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+_Para la instalación ejecuta los siguientes comandos (teniendo Nodejs instalado)_
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+_Comandos:_
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+- git clone https://github.com/DevYeison/dev-tools.git
 
-### `npm run eject`
+- cd dev-tools
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- npm i
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- npm run start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- abre un navegador web y ve a la ruta: localhost:3000/
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Deployment 📦
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+Herramientas recomendadas: Heroku - Vercel - Netlify - Firebase - GithubPages( static web app) 
+```
 
-### Code Splitting
+## Construido con 🛠️
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+_Esta API fue construida con las siguientes herramientas_
 
-### Analyzing the Bundle Size
+* [Nodejs](https://nodejs.org/es/) - Entorno de ejecución
+* [Npm](https://www.npmjs.com/) - Manejador de dependencias
+* [React](https://es.reactjs.org/) - Javascript framework for web apps
+* [HTML](https://www.w3schools.com/html/) - Hyper Text Markup Lenguage
+* [CSS](https://rometools.github.io/rome/) - Cascading style sheets
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contribuyendo 🖇️
 
-### Making a Progressive Web App
+Para contribuir por favor crear una rama y luego de terminar el desarrollo hacerle merge a master de la siguiente manera:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+_Por favor ejecuta los siguientes comandos:_
+```
+- git branch (para ver todas las ramas)
+- git checkout <nombre-rama> (para moverse a <nombre-rama>)
+- hacer los cambios necesarios y hacer push a su rama de la siguiente manera:
+- git add .
+- git commit -m "<mensaje-commit>"
+- git push origin <nombre-de-su-rama>
+- Cuando termine de subir sus cambios ir a github y darle en crear pull request desde su rama a master
+```
 
-### Advanced Configuration
+## Versionado 📌
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Se usó [Git](https://git-scm.com/) para el versionado.
 
-### Deployment
+## Autores ✒️
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+_Los autores de este proyecto son:_
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* **Yeison Garzón Toro** - *Full Stack Developer* - [YeisonT](https://github.com/devyeison)
+
+---
+⌨️ con ❤️ por [Yeison](https://github.com/devyeison) 😊
