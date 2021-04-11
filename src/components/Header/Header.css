@@ -4,19 +4,22 @@ header {
   width: 100%;
 }
 
-.heading {
-  font-size: 1.8rem;
-  margin-left: 5px;
-  text-decoration: none;
+#brand-container{
+  width: 80%;
 }
-
-#home-link{
-  text-decoration: none;
+#brand-name{
   color: #ff0054;
+  font-size: 2.2rem;
 }
 
-#home-link:hover{
-  transform: translateY(-1px);
+#brand-name:hover{
+  color:  #ffffff;
+  font-size: 2.3rem;
+}
+
+.home-link{
+  margin-left: 5px;
+  text-decoration: none; 
 }
 
 .link-element {
@@ -27,6 +30,7 @@ header {
 .link-element:hover {
   color: #ff0054;
   text-decoration: none;
+  transform: translateY(-1.5px);
 }
 
 @media screen and (min-width: 320px) and (max-width: 470px) {
