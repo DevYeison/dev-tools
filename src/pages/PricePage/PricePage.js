@@ -1,25 +1,16 @@
 import React from "react";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
+import GradientBackground from "../../components/GradientBackground/GradientBackground";
+import FormPrice from '../../components/FormPrice/FormPrice';
+import ContentHeader from '../../components/ContentHeader/ContentHeader';
+import ContentInfo from '../../components/ContentInfo/ContentInfo';
 
-const PricePage = ({
-  brandName,
-  navList,
-  currentYear,
-  reactDocsUrl,
-  githubProfileUrl,
-}) => {
+const PricePage = ({headingText,contentHeader, contentText, /* questions */}) => {
   return (
     <>
-      <Header brandName={brandName} topicList={navList} />
-      <div style={{height: "82vh"}}>
-        
-      </div>
-      <Footer
-        year={currentYear}
-        ReactUrl={reactDocsUrl}
-        GithubUrl={githubProfileUrl}
-      />
+    <GradientBackground headingText={headingText}/>
+    <ContentHeader contentHeaderText={contentHeader}/>
+    <ContentInfo contentText={contentText}/>
+    <FormPrice /* formQuestions={questions} */ />
     </>
   );
 };
