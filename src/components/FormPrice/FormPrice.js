@@ -53,14 +53,15 @@ const FormPrice = () => {
     return <>
         <div className="formStyle centerDiv">
             <Form className="m-5">
+                <div style={{height: '30px'}}></div>
                 <>
                     {
                         forms.map((form) => (
                             createFormGroup(form)))
                     }
                 </>
-                <div className="d-flex justify-content-center">
-                    <Button variant="primary" type="submit" onClick={handleSubmit}>
+                <div className="mt-5 d-flex justify-content-center">
+                    <Button variant="outline-dark" type="submit" onClick={handleSubmit}>
                         Siguiente
                     </Button>
                 </div>
