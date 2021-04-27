@@ -1,14 +1,17 @@
-import React from 'react';
-import Card from 'react-bootstrap/Card';
-import './CardWithImage.css';
+import React from "react";
+import Card from "react-bootstrap/Card";
+import "./CardWithImage.css";
 
-const CardWithImage = ({ img, title, description }) => (
-  <Card border="light">
-    <Card.Img data-test-id="cardImage" id="cardImg" variant="top" src={img} />
-    <Card.Body>
-      <Card.Title data-test-id="cardTitle" id="cardTitle">{title}</Card.Title>
-      <Card.Text data-test-id="cardText" id="cardText">{description}</Card.Text>
-    </Card.Body>
+import { Link } from "react-router-dom";
+
+const CardWithImage = ({ image, cardTitle, resourceUrl, index }) => (
+  <Card border="secundary" id="cardWithImage">
+    <Link id="linkToDetail" key={index} to={resourceUrl}>
+      <Card.Img id="cardStyleImage" variant="top" src={image} alt={cardTitle} />
+      <Card.Body>
+        <Card.Text id="cardWithImageText">{cardTitle}</Card.Text>
+      </Card.Body>
+    </Link>
   </Card>
 );
 
