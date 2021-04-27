@@ -16,3 +16,22 @@
     color: #0093FF;
     text-decoration: none;
 }
+
+
+@media screen and (min-width: 320px) and (max-width: 470px) {
+  #footer {
+    font-size:0.8rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  #footer {
+    font-size:1.25rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  #footer {
+    font-size: 1.8rem;
+  }
+}
