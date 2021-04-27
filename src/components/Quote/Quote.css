@@ -1,7 +1,48 @@
 #quote{
-    margin: 0 50px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #quoteText{
     font-size: 1rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 470px) {
+    #quoteText{
+        font-size: 0.85rem;
+    }
+    #quote{
+        width: 80%;
+    }
+
+    .blockquote-footer{
+        font-size: 0.9rem;
+    }
+  }
+
+  @media screen and (min-width: 1600px) {
+    #quoteText{
+        font-size: 1.3rem;
+    }
+    
+    .blockquote-footer{
+        font-size: 1.4rem;
+    }
+    #quoteHeader{
+        font-size: 1.45rem;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    #quoteText{
+        font-size: 1.7rem;
+    }
+    
+    .blockquote-footer{
+        font-size: 1.8rem;
+    }
+    #quoteHeader{
+        font-size: 1.85rem;
+    }
 }

@@ -4,7 +4,7 @@ import './Quote.css';
 
 const Quote = ({ quoteHeader, quoteText, author, profession }) => (
   <Card id="quote">
-    <Card.Header>{quoteHeader}</Card.Header>
+    <Card.Header id="quoteHeader">{quoteHeader}</Card.Header>
     <Card.Body>
       <blockquote className="blockquote mb-0">
         <p id="quoteText">{quoteText}</p>
