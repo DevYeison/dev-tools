@@ -1,0 +1,24 @@
+#headerIndex {
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#listContainer {
+  width: 50%;
+  margin: 50px auto;
+  background-color: #e7e4ebf8;
+  border-radius: 20px;
+}
+
+.listItem {
+  font-size: 1.4rem;
+  list-style-type: none;
+}
+#line{
+    margin: 100px auto;
+    width: 80%;
+}
