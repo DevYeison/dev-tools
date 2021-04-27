@@ -1,0 +1,60 @@
+#cardTitle {
+  text-align: center;
+  font-size: 2rem;
+}
+
+#cardText {
+  font-size: 1rem;
+  text-justify: distribute;
+  margin: 0 3px;
+}
+
+#cardImg {
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+}
+
+@media screen and (min-width: 320px) and (max-width: 470px) {
+  #cardTitle {
+    font-size: 1.5rem;
+  }
+
+  #cardText {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 470px) and (max-width: 900px) {
+    #cardTitle {
+        font-size: 1.6rem;
+      }
+    
+      #cardText {
+        font-size: 1rem;
+      }
+}
+
+@media screen and (min-width: 1600px) {
+    #cardTitle {
+        font-size: 1.7rem;
+      }
+    
+      #cardText {
+        font-size: 1.2rem;
+      }
+}
+
+@media screen and (min-width: 2000px) {
+    #cardTitle {
+        font-size: 2rem;
+      }
+    
+      #cardText {
+        font-size: 1.8rem;
+      }
+
+      #lottieImage{
+        height: 500px;
+        width:  490px;
+      }
+}
