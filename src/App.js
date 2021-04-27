@@ -1,16 +1,17 @@
-import React from 'react';
-import './App.css'
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import HomeContainer from './containers/HomeContainer/HomeContainer';
-import PriceContainer from "../src/containers/PriceContainer/PriceContainer";
-import Resources from "../src/containers/Resources/Resources";
-import Contact from "../src/containers/Contact/Contact";
-import ErrorContainer from "../src/containers/ErrorContainer/ErrorContainer";
+import React from "react";
+import "./App.css";
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import HttpsRedirect from "react-https-redirect";
+import "bootstrap/dist/css/bootstrap.min.css";
+import HomeContainer from "./containers//HomeContainer";
+import PriceContainer from "../src/containers//PriceContainer";
+import ResourcesContainer from "../src/containers//ResourcesContainer";
+import Contact from "../src/containers//ContactContainer";
+import NotFoundErrorContainer from "../src/containers/NotFoundErrorContainer";
 
-
-import Header from './components/Header/Header';
+import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
   const brandName = "Dev | Tools";
@@ -21,40 +22,44 @@ function App() {
     {
       id: 1,
       title: "Cotización",
-      route: "price",
+      route: "/price",
     },
     {
       id: 2,
       title: "Recursos",
-      route: "resources",
+      route: "/resources",
     },
     {
       id: 3,
       title: "Contacto",
-      route: "contact",
+      route: "/contact",
     },
   ];
 
   return (
-    <>
+    <HttpsRedirect>
       <BrowserRouter>
+        <ScrollToTop />
         <Header brandName={brandName} topicList={routes} />
         <Switch>
           <Route exact path="/home" component={HomeContainer}></Route>
           <Route exact path="/price" component={PriceContainer}></Route>
-          <Route exact path="/resources" component={Resources}></Route>
+          <Route path="/resources" component={ResourcesContainer}></Route>
           <Route exact path="/contact" component={Contact}></Route>
           <Route exact path="/">
             <Redirect to="/home"></Redirect>
           </Route>
 
-          <Route path="*" component={ErrorContainer}></Route>
+          <Route path="*" component={NotFoundErrorContainer}></Route>
         </Switch>
       </BrowserRouter>
-      <Footer currentYear={currentYear} GithubUrl={githubProfileUrl} ReactUrl={reactDocsUrl} />
-    </>
+      <Footer
+        currentYear={currentYear}
+        GithubUrl={githubProfileUrl}
+        ReactUrl={reactDocsUrl}
+      />
+    </HttpsRedirect>
   );
-
 }
 
 export default App;

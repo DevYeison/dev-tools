@@ -1,13 +1,45 @@
-
-html{
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    scrollbar-width: thin;
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
-    width: 0.5em;
+  width: 0.5em;
 }
 ::-webkit-scrollbar-thumb {
-    background: #A1A1A1
+  background: #a1a1a1;
+}
+
+#topicExplain {
+  width: 150vh;
+  font-size: 1.2rem;
+  margin-bottom: 80px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#topicTitle {
+  font-size: 1.6rem;
+}
+
+#paddingColumns {
+  padding-bottom: 30px;
+}
+
+#conclusion {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#link {
+  font-size: 1.65rem;
+  margin-bottom: 40px;
+}
+
+.linkElement {
+  font-size: 1.2rem;
+  padding-bottom: 10px;
 }
